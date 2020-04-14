@@ -1,0 +1,23 @@
+article {
+  /* border: 2px solid #888; */
+}
+
+.popular-blogs {
+  width: 66%;
+  height: 85vh;
+}
+
+.trending-blogs {
+  width: 31%;
+  height: 50vh;
+  margin-left: 3%;
+}
+
+.mainblog-item {
+  margin: 3px 5px;
+  padding: 10px;
+}
+
+.popular-item-group {
+  margin-top: 20px;
+}

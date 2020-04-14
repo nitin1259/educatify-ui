@@ -27,3 +27,11 @@ body {
   height: 0;
   visibility: hidden;
 }
+
+.row {
+  margin: 0 30px;
+}
+
+root {
+  position: relative;
+}

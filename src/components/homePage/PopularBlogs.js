@@ -1,0 +1,19 @@
+import React from "react";
+import "./HomePage.css";
+import MainBlog from "./MainBlog";
+import { Item } from "semantic-ui-react";
+
+function PopularBlogs() {
+  return (
+    <article className="popular-blogs">
+      <Item.Group className="popular-item-group">
+        <MainBlog />
+        <MainBlog />
+        <MainBlog />
+        <MainBlog />
+      </Item.Group>
+    </article>
+  );
+}
+
+export default PopularBlogs;

@@ -1,11 +1,33 @@
+/*
+Are ya yellow?!: #feda6a
+Silver Fox: #d4d4dc
+Deep Matte Grey: #393f4d
+Dark Slate: #1d1e22
+*/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
 .header-main {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 10px;
+}
+
+.header-name,
+.header-nav {
   padding-left: 30px;
 }
 
 .nav-list {
   list-style: none;
+  padding-left: 0;
 }
 
 .nav-list li {
@@ -13,57 +35,24 @@
   margin-right: 30px;
 }
 
-.logo-img {
-  height: 50px;
-  width: auto;
+.nav-list li a:link,
+.nav-list li a:visited {
+  font-size: 90%;
+  font-weight: 400;
+  color: #333;
+  padding: 5px 0;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  transition: border 0.5s;
 }
 
-.row {
-  width: 1140px;
-  margin: auto;
-}
-
-.header-nav {
-  color: black;
+.nav-list li a:hover,
+.nav-list li a:active {
+  border-bottom: 2px solid #000;
 }
 
 .header-name {
   overflow: hidden;
-}
-
-/* Style the search box inside the navigation bar */
-.header-name input[type="text"] {
-  padding: 5px;
-  float: right;
-  border: 1px solid #e9e9e9;
-  border-radius: 5px;
-  margin-left: 20px;
-  width: 40%;
-  font-size: 17px;
-}
-
-/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-@media screen and (max-width: 600px) {
-  .header-name input[type="text"] {
-    display: block;
-    text-align: left;
-    width: 60%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type="text"] {
-    border: 1px solid #ccc;
-  }
-}
-
-.user-list {
-  list-style: none;
-  float: right;
-}
-
-.user-list li {
-  display: inline-block;
-  margin: 0 10px 0 20px;
 }
 
 *:focus {
