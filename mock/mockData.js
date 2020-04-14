@@ -19,8 +19,22 @@ const authors = [
   { id: 3, name: "Kapil Gill" },
 ];
 
+const tags = [
+  { id: 1, name: "Coronovirus" },
+  { id: 2, name: "Stories" },
+  { id: 3, name: "World" },
+  { id: 4, name: "Politics" },
+  { id: 5, name: "Technology" },
+  { id: 6, name: "Culture" },
+  { id: 7, name: "Art" },
+  { id: 8, name: "Life" },
+  { id: 9, name: "Social" },
+  { id: 10, name: "more..." },
+];
+
 // Using CommonJS style export so we can consume via Node (without using Babel-node)
 module.exports = {
   posts,
   authors,
+  tags,
 };
