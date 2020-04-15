@@ -21,3 +21,9 @@ article {
 .popular-item-group {
   margin-top: 20px;
 }
+
+.popular-blogs-heading,
+.trending-blogs-heading {
+  font-size: 110%;
+  font-weight: 200;
+}

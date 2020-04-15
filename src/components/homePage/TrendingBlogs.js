@@ -6,6 +6,7 @@ import SlaveBlog from "./SlaveBlog";
 function TrendingBlogs() {
   return (
     <article className="trending-blogs">
+      <div className="popular-blogs-heading">Trending in Educatify...</div>
       <Item.Group divided>
         <SlaveBlog />
         <SlaveBlog />

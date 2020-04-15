@@ -6,16 +6,18 @@ function ReadingBlog() {
   return (
     <section className="row">
       <div class="reading-blog-div">
-        <img src={logo} alt="Educatify" className="read-blog-img" />
         <h2>Influence of Western Culture on Indian Society</h2>
         <p>
           India is a secular country where the people have the freedom to
           practice any religion and also to convert into another religion of
           their choice. So, all the cultures are freely accepted and respected
-          by the Indians. Itâ€™s an environment to cultivate or build oneself
+          by the Indians. Its an environment to cultivate or build oneself
           ethically, socially and in all other aspects that lead an all over
           human development.
-          <br />
+        </p>
+        <img src={logo} alt="Educatify" className="read-blog-img" />
+
+        <p>
           Every culture is a combination of some good and bad features. All in
           one, culture means â€˜a way of lifeâ€™. Every geographical body has
           its own custom viz. culture. People of different nations are
