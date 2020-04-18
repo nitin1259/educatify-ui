@@ -1,0 +1,60 @@
+/*
+Are ya yellow?!: #feda6a
+Silver Fox: #d4d4dc
+Deep Matte Grey: #393f4d
+Dark Slate: #1d1e22
+*/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.header-main {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.header-name,
+.header-nav {
+  padding-left: 30px;
+}
+
+.nav-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.nav-list li a:link,
+.nav-list li a:visited {
+  font-size: 90%;
+  font-weight: 400;
+  color: #333;
+  padding: 5px 0;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  transition: border 0.5s;
+}
+
+.nav-list li a:hover,
+.nav-list li a:active {
+  border-bottom: 2px solid #000;
+}
+
+.header-name {
+  overflow: hidden;
+}
+
+*:focus {
+  outline: none;
+}

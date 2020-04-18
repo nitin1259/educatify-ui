@@ -1,0 +1,78 @@
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+footer {
+  background-color: #eee;
+  padding: 20px;
+  font-size: 80%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-nav,
+.social-links {
+  list-style: none;
+}
+
+.footer-nav {
+  float: left;
+}
+
+.social-links {
+  float: right;
+}
+
+.social-links:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 0 5px;
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 0 5px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #333;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s font-size 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #000;
+  font-size: 120%;
+}
+
+.social-links li a:hover,
+.social-links li a:active {
+  font-size: 120%;
+}
+
+footer p {
+  display: block;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
