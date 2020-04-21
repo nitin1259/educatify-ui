@@ -10,8 +10,6 @@ function PopularBlogs() {
       <Item.Group className="popular-item-group">
         <MainBlog />
         <MainBlog />
-        <MainBlog />
-        <MainBlog />
       </Item.Group>
     </article>
   );
