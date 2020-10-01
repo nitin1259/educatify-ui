@@ -17,12 +17,23 @@ Dark Slate: #1d1e22
 
 .header-main {
   width: 100%;
-  margin-top: 10px;
+  background-color: black;
 }
 
-.header-name,
+.header-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 10px 10px;
+}
+
 .header-nav {
-  padding-left: 30px;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
 }
 
 .nav-list {
@@ -39,7 +50,7 @@ Dark Slate: #1d1e22
 .nav-list li a:visited {
   font-size: 90%;
   font-weight: 400;
-  color: #333;
+  color: white;
   padding: 5px 0;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
@@ -48,7 +59,7 @@ Dark Slate: #1d1e22
 
 .nav-list li a:hover,
 .nav-list li a:active {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #fff;
 }
 
 .header-name {

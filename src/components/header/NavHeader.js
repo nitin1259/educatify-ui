@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 function NavHeader(props) {
@@ -6,17 +7,23 @@ function NavHeader(props) {
     <nav className="header-nav">
       <ul className="nav-list">
         <li>
-          <a href="/">Home</a>
+          <Link to="/" className="header__link">
+            Home
+          </Link>
         </li>
         {props.tags.map((tag) => {
           return (
             <li>
-              <a href="/blog">{tag}</a>
+              <Link to="/blog" className="header__link">
+                {tag}
+              </Link>
             </li>
           );
         })}
         <li>
-          <a href="/">More... </a>
+          <Link to="/blog/create" className="header__link">
+            Write One...
+          </Link>
         </li>
       </ul>
     </nav>

@@ -7,6 +7,7 @@ import PageNotFound from "./components/common/PageNotFound";
 import FooterPage from "./components/footer/Footer";
 import About from "./components/common/About";
 import ReadingBlog from "./components/generalblog/ReadingBlog";
+import CreateBlog from "./components/generalblog/CreateBlog";
 
 function App() {
   return (
@@ -14,9 +15,10 @@ function App() {
       <Header />
       <Switch>
         <Route path="/" exact component={HomePage} />
+        <Route path="/blog/create" component={CreateBlog} />
         <Route path="/blog" component={GenericBlog} />
         <Route path="/about" component={About} />
-        <Route paht="/read" component={ReadingBlog} />
+        <Route path="/read" component={ReadingBlog} />
         <Route component={PageNotFound} />
       </Switch>
       <FooterPage />
