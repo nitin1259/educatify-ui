@@ -8,10 +8,11 @@ import FooterPage from "./components/footer/Footer";
 import About from "./components/common/About";
 import ReadingBlog from "./components/generalblog/ReadingBlog";
 import CreateBlog from "./components/generalblog/CreateBlog";
+import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Header />
       <Switch>
         <Route path="/" exact component={HomePage} />
@@ -21,7 +22,7 @@ function App() {
         <Route path="/read" component={ReadingBlog} />
         <Route component={PageNotFound} />
       </Switch>
-      <FooterPage />
+      {/* <FooterPage /> */}
     </div>
   );
 }

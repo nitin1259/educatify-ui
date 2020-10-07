@@ -20,6 +20,7 @@ Dark Slate: #1d1e22
   padding: 10px 10px;
   background-color: #222;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   position: sticky;
   justify-content: space-between;
@@ -36,6 +37,7 @@ Dark Slate: #1d1e22
 
 .header__nav {
   display: flex;
+  flex-wrap: flex;
   justify-content: space-evenly;
 }
 
@@ -84,6 +86,8 @@ Dark Slate: #1d1e22
 
 .header__icons {
   color: white;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .header__icons__item {
