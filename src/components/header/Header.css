@@ -4,6 +4,7 @@ Silver Fox: #d4d4dc
 Deep Matte Grey: #393f4d
 Dark Slate: #1d1e22
 */
+
 .clearfix {
   zoom: 1;
 }
@@ -15,39 +16,37 @@ Dark Slate: #1d1e22
   visibility: hidden;
 }
 
-.header-main {
-  width: 100%;
-  background-color: black;
-}
-
-.header-name {
+.header {
+  padding: 10px 10px;
+  background-color: #222;
   display: flex;
   align-items: center;
+  position: sticky;
   justify-content: space-between;
-  color: white;
-  padding: 10px 10px;
+  top: 0;
+  z-index: 100;
 }
 
-.header-nav {
-  padding-top: 20px;
+.header__logo {
+  width: 150px;
+  margin: 0 20px;
+  object-fit: contain;
+  align-items: center;
+}
+
+.header__nav {
   display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-.nav-list {
-  list-style: none;
-  padding-left: 0;
+.header__link {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
-.nav-list li {
-  display: inline-block;
-  margin-right: 30px;
-}
-
-.nav-list li a:link,
-.nav-list li a:visited {
+.header__nav a:link,
+.header__nav a:visited {
   font-size: 90%;
   font-weight: 400;
   color: white;
@@ -57,15 +56,106 @@ Dark Slate: #1d1e22
   transition: border 0.5s;
 }
 
-.nav-list li a:hover,
-.nav-list li a:active {
+.header__nav a:hover,
+.header__nav a:active {
   border-bottom: 2px solid #fff;
 }
 
-.header-name {
-  overflow: hidden;
+.header__search {
+  margin: 0 20px;
+  display: flex;
+  flex: 1;
+}
+
+.header__searchIcon {
+  padding: 5px;
+  height: 35px !important;
+  background-color: #fff;
+}
+.header_serchInput {
+  height: 35px;
+  padding: 10px;
+  border: none;
 }
 
 *:focus {
   outline: none;
 }
+
+.header__icons {
+  color: white;
+}
+
+.header__icons__item {
+  margin: 10px;
+}
+
+/*
+
+.header {
+  background-color: #131921;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__logo {
+  width: 100px;
+  margin: 18px 20px 0 20px;
+  object-fit: contain;
+}
+
+.header__search {
+  display: flex;
+  flex: 1;
+}
+
+.header__searchIcon {
+  padding: 5px;
+  height: 22px !important;
+  background-color: orange;
+}
+
+.header_serchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__link {
+  color: white;
+  text-decoration: none;
+}
+
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px 0 10px;
+}
+
+.header__optionLineOne {
+  font-size: 10px;
+}
+
+.header__optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header_optionBasket {
+  display: flex;
+  align-items: center;
+}
+
+.header__basketCount {
+  margin: 0 10px 0 10px;
+}
+*/
