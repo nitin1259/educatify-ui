@@ -1,32 +1,49 @@
 import React, { useEffect } from "react";
 import "./Header.css";
-import logo from "./../../../src/logo.svg";
-import { Input, Image, Header as Head } from "semantic-ui-react";
-import NavHeader from "./NavHeader";
+import logo from "./../../../src/edu-white-transp.png";
 import { Link } from "react-router-dom";
+import PersonIcon from "@material-ui/icons/Person";
+import BookmarkIcon from "@material-ui/icons/Bookmark";
+import NotificationsIcon from "@material-ui/icons/Notifications";
+import { Search } from "@material-ui/icons";
 
 function Header() {
-  const tags = ["technology", "world", "corona", "culture", "hotspot"];
+  // const tags = ["technology", "world", "corona", "culture", "hotspot"];
   return (
-    <header className="header-main">
-      <div className="header-name">
-        <Link to="/blog">
-          <Head as="h1" style={{ float: "left" }}>
-            <Image
-              size="small"
-              src={logo}
-              style={{ verticalAlign: "bottom" }}
-            />
-            Educatify
-          </Head>
+    <header className="header">
+      <div>
+        <Link to="/">
+          <img className="header__logo" src={logo} alt="amazon logo" />
         </Link>
-        <Input
-          icon="search"
-          style={{ float: "right", width: "30%", marginRight: "20px" }}
-          placeholder="Search..."
-        />
       </div>
-      <NavHeader tags={tags} />
+      {/* <NavHeader tags={tags} /> */}
+      <div className="header__menu">
+        <nav className="header__nav">
+          <Link to="/" className="header__link">
+            Home
+          </Link>
+          <Link to="/" className="header__link">
+            Catagory
+          </Link>
+          <Link to="/" className="header__link">
+            About
+          </Link>
+          <Link to="/blog/create" className="header__link">
+            Write One...
+          </Link>
+        </nav>
+      </div>
+      {/* <div className="header__search">
+        <input type="text" className="header_serchInput" />
+        <SearchIcon className="header__searchIcon" />
+      </div> */}
+
+      <div className="header__icons">
+        <Search className="header__icons__item" />
+        <BookmarkIcon className="header__icons__item" />
+        <NotificationsIcon className="header__icons__item" />
+        <PersonIcon className="header__icons__item" />
+      </div>
     </header>
   );
 }
