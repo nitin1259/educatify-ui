@@ -49,7 +49,7 @@
 
 .acticlecard__content > h2:hover {
   font-weight: bold;
-  transform: scale(1.03);
+  transform: scale(1.001);
   color: black;
   transition: transform 0.5s;
 }

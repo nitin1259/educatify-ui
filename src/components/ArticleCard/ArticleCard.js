@@ -2,13 +2,16 @@ import React from "react";
 import "./ArticleCard.css";
 import ThumbUpIcon from "@material-ui/icons/ThumbUp";
 import image1 from "./../../images/neal-e-johnson-KdrmVW1bC2s-unsplash.jpg";
+import { Link } from "react-router-dom";
 
 function ArticleCard() {
   return (
     <div className="articlecard">
-      <div className="acticlecard__image">
-        <img src={image1} alt="article" />
-      </div>
+      <Link to="/read">
+        <div className="acticlecard__image">
+          <img src={image1} alt="article" />
+        </div>
+      </Link>
       <div className="articlecard_published">
         <span>{"6 Oct 2019"}</span>
         <span> By {"Amit Ravichandran"}</span>
@@ -26,7 +29,9 @@ function ArticleCard() {
           <ThumbUpIcon color="black" style={{ padding: "2px" }} />
           {5}
         </span>
-        <span style={{ color: "black" }}>Read More</span>
+        <Link to="/read">
+          <span style={{ color: "black" }}>Read More</span>
+        </Link>
       </div>
     </div>
   );
