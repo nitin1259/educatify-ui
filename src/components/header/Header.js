@@ -1,10 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Header.css";
 import logo from "./../../../src/edu-white-transp.png";
 import { NavLink } from "react-router-dom";
 import PersonIcon from "@material-ui/icons/Person";
-import BookmarkIcon from "@material-ui/icons/Bookmark";
-import NotificationsIcon from "@material-ui/icons/Notifications";
 import { Search } from "@material-ui/icons";
 
 function Header() {
@@ -13,7 +11,7 @@ function Header() {
     <header className="header">
       <div>
         <NavLink to="/">
-          <img className="header__logo" src={logo} alt="amazon logo" />
+          <img className="header__logo" src={logo} alt="Educatify" />
         </NavLink>
       </div>
       {/* <NavHeader tags={tags} /> */}
@@ -38,8 +36,6 @@ function Header() {
 
       <div className="header__icons">
         <Search className="header__icons__item" />
-        {/* <BookmarkIcon className="header__icons__item" />
-        <NotificationsIcon className="header__icons__item" /> */}
         <PersonIcon className="header__icons__item" />
       </div>
     </header>

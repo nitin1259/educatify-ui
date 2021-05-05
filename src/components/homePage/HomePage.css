@@ -1,6 +1,23 @@
 .main {
-  margin: 10px 20px;
+  margin: 10px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.homepage__mainpanel {
+  /* background-color: rgb(213, 213, 247); */
+  flex: 2;
+  border-right: 1px solid #ccc;
+}
+
+.homepage__sidepanel {
+  background-color: rgb(212, 245, 212);
+  flex: 1;
+  max-height: 80vh;
+  padding: 10px;
+  margin: 5px 10px;
 }

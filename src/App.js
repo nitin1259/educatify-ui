@@ -10,6 +10,7 @@ import ReadingBlog from "./components/generalblog/ReadingBlog";
 import "./App.css";
 import NewBlog from "./components/createblog/NewBlog";
 import CreateBlog from "./components/generalblog/CreateBlog";
+import FooterPage from "./components/footer/Footer";
 
 function App() {
   return (
