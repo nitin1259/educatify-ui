@@ -6,15 +6,7 @@ import ArticleCard from "../ArticleCard/ArticleCard";
 function HomePage() {
   return (
     <main className="main">
-      <ArticleCard />
-      <ArticleCard />
-      <ArticleCard />
-      <ArticleCard />
-      <ArticleCard />
-      <ArticleCard />
-      <ArticleCard />
-      {/* <PopularBlogs />
-      <TrendingBlogs /> */}
+      <h2> This is home page</h2>
     </main>
   );
 }
