@@ -19,7 +19,7 @@ function App() {
         <Route path="/blog/create" component={CreateBlog} />
         <Route path="/blog" component={GenericBlog} />
         <Route path="/about" component={About} />
-        <Route path="/read" component={ReadingBlog} />
+        <Route path="/readpage" component={ReadingBlog} />
         <Route component={PageNotFound} />
       </Switch>
       {/* <FooterPage /> */}
